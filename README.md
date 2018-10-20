@@ -17,6 +17,8 @@ docker run --rm -d -it --name=headstart -p 8080:80 -v <path/to/headstart/repo/>:
 
 Now you can got to localhost:8080 and test Headstart.
 
+## Other useful commands
+
 See running containers
 
 ```
