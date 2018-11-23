@@ -1,7 +1,7 @@
 FROM php:7.0-apache
 RUN apt-get update && apt-get install -y \
   gnupg
-RUN apt-key adv --keyserver keys.gnupg.net --recv-keys E19F5F87128899B192B1A2C2AD5F960A256A04AF && \
+RUN apt-key adv --keyserver keys.gnupg.net --no-tty --recv-keys E19F5F87128899B192B1A2C2AD5F960A256A04AF && \
   echo "deb http://cran.us.r-project.org/bin/linux/debian stretch-cran35/" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install -y \
   sqlite3 \
